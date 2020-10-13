@@ -5,8 +5,14 @@ app=Flask(__name__) # __name__ 代表目前執行的模組
 def home():
     return "Hello 廢物! 今天吃什麼?!"
 @app.route("/test")
-
 def test():
     return "小威嫩嫩還在睡阿? 吃鍋貼好了!"
+@app.route("/breakfast")
+def breakfast():
+    return "早餐店要嘛?"
+@app.route("/drink")
+def drink():
+    return "要買飲料嗎?"
+
 if __name__=="__main__": # 如果以主程式執行
     app.run() # 立刻啟動伺服器
