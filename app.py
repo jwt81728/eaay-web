@@ -13,6 +13,9 @@ def breakfast():
 @app.route("/drink")
 def drink():
     return "要買飲料嗎?"
+@app.route("/lay"):
+def lay():
+    return "小威雷包!!"
 
 if __name__=="__main__": # 如果以主程式執行
     app.run() # 立刻啟動伺服器
