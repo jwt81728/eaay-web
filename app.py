@@ -13,7 +13,7 @@ def breakfast():
 @app.route("/drink")
 def drink():
     return "要買飲料嗎?"
-@app.route("/lay"):
+@app.route("/lay")
 def lay():
     return "小威雷包!!"
 
