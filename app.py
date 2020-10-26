@@ -16,6 +16,9 @@ def drink():
 @app.route("/lay")
 def lay():
     return "小威雷包!!"
+@app.route("/shu")
+def shu():
+    return "             我是ㄎ一ㄤ妹, 劉緒緒!!!"
 
 if __name__=="__main__": # 如果以主程式執行
     app.run() # 立刻啟動伺服器
