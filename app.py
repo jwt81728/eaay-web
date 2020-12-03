@@ -21,23 +21,21 @@ def shu():
     return "             我是ㄎ一ㄤ妹, 劉緒緒!!!"
 
 
-
-@app.route('/pic')
-def images():
-    outStr = """
-    <link href="/static/mycss.css" rel="stylesheet" type="text/css">
-    <div class="pic">
-    嘿嘿嘿~~~
-    </div>
-    <img src="/static/KtOrqGL.jpg">
-    """
-    return outStr
+#
+# @app.route('/pic')
+# def images():
+#     outStr = """
+#     <link href="/static/mycss.css" rel="stylesheet" type="text/css">
+#     <div class="pic">
+#     嘿嘿嘿~~~
+#     </div>
+#     <img src="/static/KtOrqGL.jpg">
+#     """
+#     return outStr
 from flask import render_template
 @app.route("/ceb101")
 def home():
     return render_template("ceb101.html")
-
-
 
 
 if __name__=="__main__": # 如果以主程式執行
