@@ -29,7 +29,7 @@ def images():
     <div class="pic">
     嘿嘿嘿~~~
     </div>
-    <img src="/static/google.jpg">
+    <img src="/static/KtOrqGL.jpg">
     """
     return outStr
 
