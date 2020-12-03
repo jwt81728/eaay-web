@@ -40,7 +40,11 @@ def home():
 @app.route("/menber")
 def men():
     return render_template("menber.html")
+@app.route("/elements")
 def ele():
     return render_template("elements.html")
+@app.route("/generic")
+def gen():
+    return render_template("generic.html")
 if __name__=="__main__": # 如果以主程式執行
     app.run() # 立刻啟動伺服器
