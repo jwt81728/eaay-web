@@ -32,7 +32,18 @@ def images():
     <img src="/static/KtOrqGL.jpg">
     """
     return outStr
-
+from flask import render_template
+@app.route("/ceb101")
+def home():
+    return render_template("ceb101.html")
+    outStr = """
+        <link href="/static/mycss.css" rel="stylesheet" type="text/css">
+        <div class="pic">
+        嘿嘿嘿~~~
+        </div>
+        <img src="/static/KtOrqGL.jpg">
+        """
+    return outStr
 
 
 
