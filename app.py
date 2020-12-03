@@ -37,6 +37,8 @@ from flask import render_template
 def home():
     return render_template("ceb101.html")
 
-
+@app.route("/menber")
+def men():
+    return render_template("menber.html")
 if __name__=="__main__": # 如果以主程式執行
     app.run() # 立刻啟動伺服器
