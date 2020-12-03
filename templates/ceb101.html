@@ -5,10 +5,10 @@
   <title>吾人商店</title>
   <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
 </head>
-<body>
+<body background="/static/img/logo.png">
 <div class="jumbotron">
-  <h1 class="display-4">歡迎來到吾人商店！</h1>
-  <p class="lead">，<strong>課表到底要改幾次?!</strong> 今天晚上不用上課要討論嗎? </p>
+  <h1 class="display-4" align="center">歡迎來到吾人商店！</h1>
+  <p class="lead"><strong>課表到底要改幾次?!</strong> 今天晚上不用上課要討論嗎? </p>
   <hr class="my-4">
   <p>這邊可以寫敘述 <strong>課表到底要改幾次?!</strong></p>
   <a class="btn-dirty-purple btn-lg" href="#" role="button">這連結可以改任何串聯</a>
@@ -17,7 +17,7 @@
   <div class="container">
   <div class="row desc">
   <div class="col">
-    <h2><i class="fas fa-kiwi-bird"></i>  銷售分析</h2>
+    <h2><button type="button" class="btn btn-primary">銷售分析</button> </h2>
     <p>目前還沒有寫code</p>
     </div>
   <div class="col">
@@ -31,6 +31,6 @@
   </div>
 </div>
   <p>這是簡單的架設</p>
-  <img srcset="/static/img/logo.png" 1200w loading="lazy">
+<!--  <img srcset="/static/img/logo.png" 800w loading="lazy">-->
 </body>
 </html>
