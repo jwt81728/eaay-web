@@ -20,14 +20,22 @@ def lay():
 def shu():
     return "             我是ㄎ一ㄤ妹, 劉緒緒!!!"
 
-from flask import Response, Flask
+
+app = Flask(__name__, static_url_path='/static',static_folder='./static')
+
+@app.route('/pic')
+def images():
+    outStr = """
+    <link href="/static/mycss.css" rel="stylesheet" type="text/css">
+    <div class="pic">
+    嘿嘿嘿~~~
+    </div>
+    <img src="/static/google.jpg">
+    """
+    return outStr
 
 
-@app.route("/pic")
-def pic():
-    with open("KtOrqGL.jpg", 'r') as image:
-        resp = Response(image, mimetype="image/jpeg")
-        return resp
+
 
 
 if __name__=="__main__": # 如果以主程式執行
