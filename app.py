@@ -16,9 +16,7 @@ app=Flask(__name__, static_url_path='/static',static_folder='./static') # __name
 # @app.route("/lay")
 # def lay():
 #     return "小威雷包!!"
-# @app.route("/shu")
-# def shu():
-#     return "             我是ㄎ一ㄤ妹, 劉緒緒!!!"
+
 
 
 #
